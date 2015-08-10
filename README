@@ -1,0 +1,5 @@
+ZFS Zpools are a disaster if you accidentally fill them to capacity.  Due to their Copy On Write (COW) nature, a full file system will not only be crippled in performance, but also may not even let you do any real "deletes" to clear up space!  This script provides the means by which you can begin freeing space back up in order to get to a reasonable zpool capacity (~90%), such that normal functions such as rm beging to work again.  
+
+USE THIS SCRIPT AT YOUR OWN RISK
+
+TODO: More details to follow about how this works and the inherent danger (and therefore care needed) in using it
