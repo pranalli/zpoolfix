@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -x
 
 # This is designed for the purposes of "fixing" an overly-full ZFS zpool, but, more generally, is just a script that "psuedo-deletes" files by
 # overwriting their contents with a single byte.  Once enough space is cleaned up by using this script, you can start using normal rm to begin
@@ -7,7 +7,7 @@
 
 if [ -z ${1} ] 
     then
-        echo "Proper use: zpoolfx [FILES (wildcards allowed)]"
+        echo "Proper use: zpoolfix [file1 file2] or [path1 path2] (mixing file/paths and wildcards are allowed)]"
         exit -1 
 fi
 
