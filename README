@@ -6,7 +6,7 @@ only be crippled in performance, but also may not even let you do any
 real "deletes" to clear up space!  This script provides the means by
 which you can begin freeing space back up in order to get to a 
 reasonable zpool capacity (~90%), such that normal functions such as 
-rm beging to work again.  
+rm begin to work again.  
 
 USE THIS SCRIPT AT YOUR OWN RISK
 
