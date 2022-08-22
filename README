@@ -4,4 +4,6 @@ ZFS Zpools are a disaster if you accidentally fill them to capacity.  Due to the
 
 USE THIS SCRIPT AT YOUR OWN RISK
 
-TODO: More details to follow about how this works and the inherent danger (and therefore care needed) in using it
+Update:  I'm never going to update this to include the actual pieces that destroy data, because it would be irresponsible IMO without engineering a whole piece of software.  I will leave some basic instructions for a DIY.
+
+The script here is nothing more than a basic BASH script that walks through a given path recursively.  Because of the nature of ZFS, you cannot simply add some "rm -f" statements here, you need to actually clobber files by using something like "echo > $FILE_NAME".  
